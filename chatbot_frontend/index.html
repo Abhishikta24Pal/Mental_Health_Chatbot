@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SereneAI - Your Mental Wellness Companion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #dfe9f3, #ffffff);
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: transparent;
+    }
+    .logo {
+      font-weight: bold;
+    }
+    .btn-container {
+      display: flex;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #4e9af1;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #357fd3;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 2rem; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+    }
+    .hero > div { 
+      margin-bottom: 2rem; 
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 2.5rem; 
+      color: #2a5b84;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.1rem; 
+      margin-top: 0;
+    }
+    #lottie-container {
+      width: 200px;
+      height: 200px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>SereneAI</strong></div>
+    <div class="btn-container">
+      <button class="btn" onclick="window.location.href='login.html'">Login</button>
+      <button class="btn" onclick="window.location.href='signup.html'">Signup</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Your Personal Emotional Wellness Companion</h1>
+      <p>SereneAI supports you with thoughtful and empathetic mental health responses. Chat freely, reflect daily, and track your emotional journey — all in one safe space.</p>
+    </div>
+    <div id="lottie-container"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-container'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'index.json' 
+    });
+  </script>
+
+</body>
+</html>
